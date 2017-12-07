@@ -1,5 +1,5 @@
 #!/bin/sh
 export ENV_PATH=$(pipenv --venv)
-export FLASK_APP=/usr/src/app/cashman/index.py
+export FLASK_APP=/opt/cashman/index.py
 source $ENV_PATH/bin/activate
-flask run -h 0.0.0.0
+#flask run -h 0.0.0.0

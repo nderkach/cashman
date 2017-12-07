@@ -80,6 +80,14 @@ def add_expense():
     transactions.append(expense.data)
     return "", 204
 
+@app.route('/ping')
+def ping():
+    return "pong", 200
+
+@app.route('/status')
+def status():
+    return jsonify({"text": "ok"})
+
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host='0.0.0.0')
